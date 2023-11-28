@@ -1,0 +1,84 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: droid-sans, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root{
+    --orange:#FF7905;
+    --white:#fff;
+    --dark:#000000;
+    --grey:#808080;
+
+}
+
+body{
+    color: var(--dark);
+    background: var(--white);
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content:  center;
+    padding: 18px 40px;
+    box-shadow: 0 0.1rem 0.5rem var(--orange);
+    width: 100%;
+    background: var(--dark);
+    transition: all 0.5px;
+    position: fixed;
+
+}
+.navigation ul li a:hover{
+    color: var(--orange)
+}
+
+.home{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10%;
+    width: 70%;
+    
+}
+body{
+    background-image: url("../assets/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home-text{
+    max-width: 37rem;
+}
+.home-text .text-h4{
+    font-size: 1.5rem;
+    color: var(--orange);
+}
+.home-text .text-h1{
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    line-height: 4rem;
+    color: var(--white);
+    
+}
+
+.home-btn{
+    padding: 15px 45px;
+    background: var(--white);
+    color: var(--orange);
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+.home-btn:hover{
+    background: var(--orange);
+    color: var(--white);
+}

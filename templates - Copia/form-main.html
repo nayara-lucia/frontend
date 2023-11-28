@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style2.css">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-image">
+            <img src="assets/undraw_shopping_re_3wst.png" alt="" >
+        </div>
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Preencha</h1>
+                    </div>
+                </div>
+
+                <div class="input-group">       
+                    <div>
+                    <div class="input-slider">
+                        <label for="valor">Keyword Difficulty: Mínimo</label >
+                            <input type="range" min="3" max="99" />
+                            <div class="value">2</div>
+                            <br>
+                            <label for="valor">Keyword Difficulty: Máximo</label >
+                            <input type="range" min="3" max="99" />
+                            <div class="value">99</div>
+                    </div>
+                    
+
+                    <div class="input-slider">
+                        <label for="valor">CPC: Mínimo</label >
+                            <input type="range" min="0" max="38" />
+                            <div class="value">0</div>
+                            <br>
+                            <label for="valor">CPC: Máximo</label >
+                            <input type="range" min="0" max="38" />
+                            <div class="value">38</div>
+                    </div>
+                    </div>
+                    <script>
+                        const slider = document.querySelector("input")
+                        const value = document.querySelector(".value")
+                        value.textContent = slider.value 
+                        slider.oninput = function(){
+                        value.textContent = this.value;
+                       }
+                       </script>
+
+                 <div> 
+                    <div class="input-box">
+                        <label for="intents">Keyword Intents</label>
+                        <select name="time">
+                            <option value="navi">Navigational</option>
+                            <option value="info">Informational</option>
+                            <option value="come">Comercial</option>
+                            <option value="trans">Transactional</option>
+                        </select>
+                    </div>
+
+
+                    <div class="input-box">
+                        <label for="url">Filtro de URL</label>
+                        <input type="text" placeholder="Urls separadas por vírgula">
+                       
+                    </div>
+
+                    <div class="input-box">
+                        <label for="contexto">Contexto para análise posterior</label>
+                        <input type="text">
+                    </div>
+                </div>  
+                <div class="arquivo">
+                    <input type="file" id="teste" name="teste">
+                </div>
+
+                </div>
+
+                <div class="continue-button">
+                    <button><a href="#">Confirmar</a> </button>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
